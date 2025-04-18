@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+#if UNITY_EDITOR
+using UnityEngine;
 using UnityEditor;
 using UnityEditor.Animations;
 using System;
@@ -200,3 +201,4 @@ public class MeshEncryptorWindow : EditorWindow
         anim.runtimeAnimatorController = ac;
     }
 }
+#endif
